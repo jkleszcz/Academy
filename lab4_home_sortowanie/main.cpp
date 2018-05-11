@@ -14,7 +14,7 @@ int main()
     heapSort(arr, 7);
     printArray(arr, sizeof(arr)/sizeof(arr[1]));
      */
-    
+
 
     return 0;
 }

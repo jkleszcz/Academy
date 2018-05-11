@@ -1,13 +1,12 @@
-// https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md - do algorytmow
-
 #include <iostream>
 #include "list.h"
+#include "BinarySearchTree.h"
 
 using namespace std;
 
-int main(int argc, char *argv[])
-{
-
+int main(int argc, char *argv[]) {
+    int x = 10;
+    delete(&x);
     return 0;
 }
 
