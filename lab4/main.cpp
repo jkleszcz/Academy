@@ -1,13 +1,13 @@
 #include <iostream>
 #include "list.h"
 #include "BinarySearchTree.h"
+#include "rekurencja.h"
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    int x = 10;
-    delete(&x);
-    return 0;
+    cout << fibboCached(10);
+
 }
 
 
@@ -27,48 +27,8 @@ int main(int argc, char *argv[]) {
 
 
 
-//Przyklady z rekurencji jeszcze
+
 /*
-#include <assert.h>
-#include <map>
-#include <iostream>
-
-using namespace std;
-
-int powNToK(int n, int k)
-{
-    assert(k >= 0);
-    if (k == 0) return 1;
-    else return n * powNToK(n, k-1);
-}
-
-long fib(int n)
-{
-    assert(n >= 0);
-    if (n <= 1) return n;
-    else return fib(n-1) + fib(n-2);
-}
-
-
-//memoizacja
-long fibCached(int n)
-{
-    assert(n >= 0);
-    if (n <= 1) return n;
-    else {
-        static map<int,long> fibs;
-        auto it = fibs.find(n);
-        long fibN;
-        if (it == fibs.end()) {
-            fibN = fibCached(n - 1) + fibCached(n - 2);
-            fibs[n] = fibN;
-        }
-        else {
-           fibN = it->second;
-        }
-        return fibN;
-    }
-}
 
 int main()
 {
